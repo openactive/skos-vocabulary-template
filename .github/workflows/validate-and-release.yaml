@@ -15,5 +15,3 @@ permissions:
 jobs:
   validate-and-release:
     uses: openactive/skos-vocabulary-workflows/.github/workflows/validate-and-release.yaml@main
-    secrets:
-      PUBLIC_REPO_ACCESS_TOKEN: ${{ secrets.PUBLIC_REPO_ACCESS_TOKEN }}
