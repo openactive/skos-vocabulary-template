@@ -5,7 +5,7 @@ A template for new OpenActive SKOS Vocabulary repositories
 
 ## Testing
 
-Note this template is itself linked to the `skos-vocabulary-editor-staging` instance of the `skos-vocabulary-editor` in Heroku. Therefore publishing from that staging instance will create a PR in this repository.
+Note this template is itself linked to the `skos-vocabulary-editor-staging` instance of the `skos-vocabulary-editor` in Heroku, which is linked to at `skos-vocabulary-template.openactive.io`. Therefore publishing from that staging instance will create a PR in this repository.
 
 // TODO: Update description in the staging Heroku to read:
 // This is test output from the staging instance of the OpenActive SKOS Vocabulary Editor.
