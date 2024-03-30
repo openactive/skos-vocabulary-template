@@ -1,24 +1,27 @@
 # skos-vocabulary-template
-A template for new OpenActive SKOS Vocabulary repositories
+A template for new OpenActive SKOS Vocabulary repositories.
 
-// TODO: Fill out template
+## Use
 
-## Testing
+In order to create a new OpenActive SKOS Vocabulary please follow this guide:
 
-Note this template is itself linked to the `skos-vocabulary-editor-staging` instance of the `skos-vocabulary-editor` in Heroku, which is linked to at `skos-vocabulary-template.openactive.io`. Therefore publishing from that staging instance will create a PR in this repository.
+Note that when this template is used, this section of the README should be removed, and the content below adapted according for the new vocabulary.
 
-// TODO: Update description in the staging Heroku to read:
-// This is test output from the staging instance of the OpenActive SKOS Vocabulary Editor.
+## Contribution
 
+### Architecture
 
-## Licence
+The workflows that drive SKOS Vocabulary publishing are dependent on the `skos-vocabulary-workflows`, which in turn depends on `skos-vocabulary-editor`, `skos-compare-action` and `SKOS.js` repositories.
 
-The documentation and data in this repository is published under 
-the [Creative Commons CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
+Note that any changes made to this repository will only impact new SKOS Vocabularies. Any changes made here must be applied to each existing SKOS Vocabulary. This repository is therefore intentional minimal.
 
+### Testing
 
+Note this template is itself linked to the `skos-vocabulary-editor-staging` instance of the `skos-vocabulary-editor` in Heroku, which is available at `skos-vocabulary-template.openactive.io`. Publishing from the staging instance will therefore create a PR in this repository, which allows it to be easily tested.
 
-## TODO mix in the following content
+When the template is used, only the latest contents are replicated into the new repository. Therefore releases and PRs associated with this repository not be transferred, and can be used for testing.
+
+---
 
 # OpenActive Activity List [![Google Drive](https://img.shields.io/badge/Google%20Drive-4285F4?logo=google-drive&logoColor=white)](https://drive.google.com/drive/folders/11Be4Ang3CRbwdsgsxZAbQLBP37nM1swn?usp=sharing)
 
@@ -62,7 +65,7 @@ The JSON-LD version of this controlled vocabulary SHOULD be retrieved frequently
 
 ## Publication process
 
-The master ('canonical') version of the Activity List is that found at [https://www.openactive.io/activity-list/](https://www.openactive.io/activity-list/). That list is stored within [iQvoc](http://iqvoc.net/), and the list editor can choose to trigger an update to the `unvalidated_activity_list.jsonld` found in this repository. The commit triggers Travis CI to validate the `unvalidated_activity_list.jsonld` with JSON Schema, and when validation is successful the live list `activity-list.jsonld` is updated and served at `https://openactive.io/activity-list/activity-list.jsonld` via GitHub pages.
+The master ('canonical') version of the Activity List is that found at [https://www.openactive.io/activity-list/](https://www.openactive.io/activity-list/). That list is stored within [iQvoc](http://iqvoc.net/), and the list editor can choose to trigger a [workflow](https://github.com/openactive/skos-vocabulary-workflow) to update this repository. The resulting `activity-list.jsonld` is updated and served at `https://openactive.io/activity-list/activity-list.jsonld` via GitHub pages.
 
 Note that new `Concepts` will not be validated unless a machine-readable (no spaces, all lowercase) `notation` is provided with them, and this `notation` value must be unique within the List.
 
@@ -70,7 +73,4 @@ Note that new `Concepts` will not be validated unless a machine-readable (no spa
 
 The documentation and data in this repository is published under 
 the [Creative Commons CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) license.
-
-The Ruby code and templates are placed into the public domain under the [Unlicense](http://unlicense.org/) waiver.
-
 
