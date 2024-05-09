@@ -65,7 +65,7 @@ The JSON-LD version of this controlled vocabulary SHOULD be retrieved frequently
 
 ## Publication process
 
-The master ('canonical') version of the Activity List is that found at [https://www.openactive.io/activity-list/](https://www.openactive.io/activity-list/). That list is stored within [iQvoc](http://iqvoc.net/), and the list editor can choose to trigger a [workflow](https://github.com/openactive/skos-vocabulary-workflow) to update this repository. The resulting `activity-list.jsonld` is updated and served at `https://openactive.io/activity-list/activity-list.jsonld` via GitHub pages.
+The master ('canonical') version of the Activity List is that found at [https://www.openactive.io/activity-list/](https://www.openactive.io/activity-list/). That list is stored within [iQvoc](http://iqvoc.net/), and the list editor can choose to trigger a [workflow](https://github.com/openactive/skos-vocabulary-workflows) to update this repository. The resulting `activity-list.jsonld` is updated and served at `https://openactive.io/activity-list/activity-list.jsonld` via GitHub pages.
 
 Note that new `Concepts` will not be validated unless a machine-readable (no spaces, all lowercase) `notation` is provided with them, and this `notation` value must be unique within the List.
 
