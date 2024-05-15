@@ -128,7 +128,7 @@
       "identifier": "cf9ff8b8-7a15-48d3-8536-1d17e70345a7",
       "type": "Concept",
       "prefLabel": "Acting",
-      "definition": "the art or occupation of performing fictional roles ",
+      "definition": "The art or occupation of performing fictional roles ",
       "notation": "acting",
       "topConceptOf": "https://openactive.io/skos-vocabulary-template"
     },
