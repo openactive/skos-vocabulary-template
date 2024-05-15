@@ -14,4 +14,4 @@ permissions:
 
 jobs:
   validate-and-release:
-    uses: openactive/skos-vocabulary-workflows/.github/workflows/validate-and-release.yaml@main
+    uses: openactive/skos-vocabulary-workflows/.github/workflows/validate-and-release.yaml@version-file
