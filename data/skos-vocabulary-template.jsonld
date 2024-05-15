@@ -137,7 +137,7 @@
       "identifier": "051e492d-e053-4d24-a54c-e9de9fc637cf",
       "type": "Concept",
       "prefLabel": "Activity Holiday Camp",
-      "definition": "Activity Holiday Camps are run by fully trained, enthusiastic staff who create a happy and safe environment for your children. A huge amount of non-stop fun activities ensure your children can have the best possible Summer Holidays or Half Term break.",
+      "definition": "Activity holiday camps are run by fully trained, enthusiastic staff who create a happy and safe environment for your children. A huge amount of non-stop fun activities ensure your children can have the best possible Summer Holidays or Half Term break.",
       "notation": "activity_holiday_camp",
       "topConceptOf": "https://openactive.io/skos-vocabulary-template"
     },
