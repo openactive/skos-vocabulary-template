@@ -10,7 +10,7 @@ on:
 
 jobs:
   create-and-merge-pr:
-    uses: openactive/skos-vocabulary-workflows/.github/workflows/create-and-merge-pr.yaml@main
+    uses: openactive/skos-vocabulary-workflows/.github/workflows/create-and-merge-pr.yaml@version-file
     with:
       publisher: ${{ github.event.inputs.publisher }}
     secrets:
